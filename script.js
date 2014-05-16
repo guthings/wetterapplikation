@@ -5,6 +5,9 @@
         <title>Wetterapplikation</title>
     </head>
     <body>
+    <script type="text/javascript">
+       document.write("Ich bin ein Javascript Code!");
+      </script>
         <?php
         // put your code here
         ?>
