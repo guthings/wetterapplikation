@@ -9,16 +9,17 @@ function success(pos) {
   $('.js-lat').text(crd.latitude);
   $('.js-long').text(crd.longitude);
   $('.js-acc').text(crd.accuracy + 'm');
+  $('.js-temp').text(crd.current temperature);
 
   $.ajax({
   	url:'https://api.forecast.io/forecast/116256c67b9efa6eee2e1bc747fa57e0/'+ crd.latitude + ',' + crd.longitude,
   	data:{
   		units: 'si'
+  		dataType:'jsonp',
   	}
-  	dataType:'jsonp',{
+  	
   	success: function(data){
   		console.log(data);
-  		}
   	}
   });
 };
