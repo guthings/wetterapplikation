@@ -19,7 +19,7 @@ function success(pos) {
   	dataType:'jsonp',
   	success: function(data){
   		console.log(data);
-  		$('.js-temp').text(crd.current.apparentTemperature + '°C');
+  		$('.js-temp').text(crd.Current Temperatur.apparentTemperature + '°C');
   	}
   });
 };
