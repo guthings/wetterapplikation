@@ -14,9 +14,9 @@ function success(pos) {
   	url:'https://api.forecast.io/forecast/116256c67b9efa6eee2e1bc747fa57e0/'+ crd.latitude + ',' + crd.longitude,
   	data:{
   		units: 'si'
-  		dataType:'jsonp',
-  	}
-  	
+  		
+  	},
+  	dataType:'jsonp',
   	success: function(data){
   		console.log(data);
   		$('.js-temp').text(crd.currently.apparentTemperature + '°C');
