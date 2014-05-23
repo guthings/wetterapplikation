@@ -15,9 +15,10 @@ function success(pos) {
   	data:{
   		units: 'si'
   	}
-  	dataType:'jsonp',
+  	dataType:'jsonp',{
   	success: function(data){
   		console.log(data);
+  		}
   	}
   });
 };
