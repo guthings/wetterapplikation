@@ -14,7 +14,7 @@ function success(pos) {
   	url;'https://api.forecast.io/forecast/116256c67b9efa6eee2e1bc747fa57e0/37.8267,-122.423',
   	dataType:'jsonp';
   	success: function(data){
-
+  		console.log(data);
   	}
   });
 };
